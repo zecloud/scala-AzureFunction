@@ -1,0 +1,10 @@
+name := "DynamicSvgFunc"
+
+version := "0.1"
+
+scalaVersion := "2.13.5"
+
+libraryDependencies += "com.microsoft.azure.functions" % "azure-functions-java-library" % "1.4.2"
+libraryDependencies += "com.microsoft.azure.functions" % "azure-functions-java-library-signalr" % "1.0.0"
+
+assemblyOutputPath in assembly := baseDirectory.value / "DynamicSvgFunc" / "negotiate" / "ScalaFunction.jar"

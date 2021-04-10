@@ -1,0 +1,28 @@
+{
+    "scriptFile": "ScalaFunction.jar",
+    "entryPoint": "Function.run",
+    "bindings": [
+      {
+        "authLevel": "anonymous",
+        "type": "httpTrigger",
+        "direction": "in",
+        "name": "req",
+        "methods": [
+          "post"
+        ]
+      },
+      {
+        "type": "http",
+        "direction": "out",
+        "name": "$return"
+      },
+      {
+        "type": "signalRConnectionInfo",
+        "direction": "in",
+        "name": "connectionInfo",
+        
+        "connectionStringSetting": "SignalrCS",
+        "hubName": "svg"
+      }
+    ]
+  }
