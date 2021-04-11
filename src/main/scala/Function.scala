@@ -48,7 +48,7 @@ class Function {
   def sendSVG(
            @HttpTrigger(
              name = "req",
-             methods = Array(HttpMethod.POST),
+             methods = Array(HttpMethod.GET),
              authLevel = AuthorizationLevel.ANONYMOUS) request: HttpRequestMessage[
              Optional[String]],
            @SignalROutput(name = "signalrmsg", hubName = "svg") signalrmsg:OutputBinding[SignalRMessage],
