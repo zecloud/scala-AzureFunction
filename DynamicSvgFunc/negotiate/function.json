@@ -17,11 +17,13 @@
         "name": "$return"
       },
       {
-        "type": "signalR",
-        "name": "signalrmsg",
-        "hubName": "svg",
+        "type": "signalRConnectionInfo",
+        "direction": "in",
+        "name": "connectionInfo",
+        
         "connectionStringSetting": "SignalrCS",
-        "direction": "out"
+        "hubName": "svg"
       }
+     
     ]
   }

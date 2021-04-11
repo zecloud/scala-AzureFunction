@@ -15,14 +15,13 @@
         "type": "http",
         "direction": "out",
         "name": "$return"
-      },
+      } ,
       {
-        "type": "signalRConnectionInfo",
-        "direction": "in",
-        "name": "connectionInfo",
-        
+        "type": "signalR",
+        "name": "signalrmsg",
+        "hubName": "svg",
         "connectionStringSetting": "SignalrCS",
-        "hubName": "svg"
+        "direction": "out"
       }
     ]
   }
