@@ -5,7 +5,7 @@
     "AzureWebJobsStorage": "UseDevelopmentStorage=true",
     "AzureWebJobs.HttpExample.Disabled": "true",
     "AzureWebJobsSecretStorageType": "files",
-    "AzureSignalRConnectionString": "Endpoint=https://ezmodeldemo.service.signalr.net;AccessKey=RSWKyLRRzJWgcipSO2sv5OHXzRSVZDJjBXXhkClaY3o=;Version=1.0;",
+    "AzureSignalRConnectionString": "Endpoint=https://ezmodel-demo-signalr.service.signalr.net;AccessKey=Uf/OxrotRIOIQ2/T4ZPbBg5orcZ8ny3QTz│\nWMg8aH9ec=;Version=1.0;",
     "ezmodeldemostorage_STORAGE": "DefaultEndpointsProtocol=https;AccountName=ezmodeldemostorage;AccountKey=qnwVv2WnRH5ZJ5cD+yxHf9r8sznGfMpw4wnLjqlfc5Yxmpj26sSKeHmXdSvT7U0HpmwDsiMjnlJ+f26Twv2FlQ=="
   },
   "ConnectionStrings": {},
