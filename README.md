@@ -1,5 +1,5 @@
 # scala-AzureFunction
-Scala Azure Function sample with sbt 
+Scala Azure Function sample with sbt  
 Custom DevContainer with custom Docker File  with all necessary tools included  
 to build it : sbt azfunCreateZipFile  
 to run it : cd target/DynamicSvgFunc && func start  
