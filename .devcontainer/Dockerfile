@@ -14,12 +14,13 @@ RUN apt-get install -y openjdk-8-jdk
 RUN apt-get install -y openjdk-8-jre
 RUN update-alternatives --config java
 RUN update-alternatives --config javac
-RUN \
-  curl -L -o sbt-1.4.9.deb http://dl.bintray.com/sbt/debian/sbt-1.4.9.deb && \
-  dpkg -i sbt-1.4.9.deb && \
-  rm sbt-1.4.9.deb && \
-  apt-get update && \
-  apt-get install sbt 
+RUN sudo apt-get install apt-transport-https curl gnupg -yqq
+RUN echo "deb https://repo.scala-sbt.org/scalasbt/debian all main" | sudo tee /etc/apt/sources.list.d/sbt.list
+RUN echo "deb https://repo.scala-sbt.org/scalasbt/debian /" | sudo tee /etc/apt/sources.list.d/sbt_old.list
+RUN curl -sL "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x2EE0EA64E40A89B84B2DF73499E82A75642AC823" | sudo -H gpg --no-default-keyring --keyring gnupg-ring:/etc/apt/trusted.gpg.d/scalasbt-release.gpg --import
+RUN sudo chmod 644 /etc/apt/trusted.gpg.d/scalasbt-release.gpg
+RUN sudo apt-get update
+RUN sudo apt-get install sbt
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 RUN curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 # RUN apt-get install ca-certificates curl apt-transport-https lsb-release gnupg

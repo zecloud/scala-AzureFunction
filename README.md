@@ -1,1 +1,2 @@
 # scala-AzureFunction
+sbt azfunCreateZipFile 
